@@ -8,7 +8,7 @@ $rotating = new RotatingFileHandler(__DIR__ . "/slim.log", 0, Logger::DEBUG);
 $logger->pushHandler($rotating);
 
 $app->add(new CorsMiddleware([
-    "origin" => ["*"],
+    "origin" => ["http://51.15.195.120:3000"],
     "methods" => ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     "headers.allow" => [
         'X-Requested-With', 
