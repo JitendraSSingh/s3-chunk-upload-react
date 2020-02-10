@@ -13,14 +13,14 @@ const uploader = new FineUploaderS3({
     },
     deleteFile: {
       enabled: true,
-      endpoint: 'http://fileupload.nanufeed.com/uploads'
+      endpoint: 'https://fileupload.nanufeed.com/uploads'
     },
     request: {
       endpoint: "https://247stream.s3.fr-par.scw.cloud",
       accessKey: "SCW6WSFJBDYT5CQWFD9T"//this is public so don't worry
     },
     signature: {
-      endpoint: "http://fileupload.nanufeed.com/sign-policy",
+      endpoint: "https://fileupload.nanufeed.com/sign-policy",
       version: 4
     },
     objectProperties: {
