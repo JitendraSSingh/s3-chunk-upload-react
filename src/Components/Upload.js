@@ -9,7 +9,10 @@ const uploader = new FineUploaderS3({
   options:{
     debug: true,
     chunking: {
-      enabled: true
+      enabled: true,
+      concurrent: {
+        enabled: true
+      }
     },
     deleteFile: {
       enabled: true,
