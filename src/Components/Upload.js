@@ -24,7 +24,8 @@ const uploader = new FineUploaderS3({
       version: 4
     },
     objectProperties: {
-      region: 'fr-par'
+      region: 'fr-par',
+      bucket: '247stream'
     },
     retry: {
       enableAuto: true
