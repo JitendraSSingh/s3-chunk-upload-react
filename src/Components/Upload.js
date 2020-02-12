@@ -73,9 +73,6 @@ function getMaxUploadChunkSize(fileSize) {
     case (fileSize > 94 * GB) && (fileSize <= 99 * GB) :
       chunkSize = 110 * MB;
       break;
-    case (fileSize > 94 * GB) && (fileSize <= 99 * GB) :
-      chunkSize = 110 * MB;
-      break;
     case (fileSize > 99 * GB) && (fileSize <= 100 * GB) :
       chunkSize = 110 * MB;
       break;
