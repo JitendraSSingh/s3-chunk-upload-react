@@ -14,7 +14,7 @@ const uploader = new FineUploaderS3({
         enabled: true
       },
       partSize: function(id){
-        console.log(getSize(id));
+        console.log(this.getSize(id));
         return 5242880;
       }
     },
