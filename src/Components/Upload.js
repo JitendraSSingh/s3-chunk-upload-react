@@ -12,6 +12,10 @@ const uploader = new FineUploaderS3({
       enabled: true,
       concurrent: {
         enabled: true
+      },
+      partSize: function(id){
+        console.log(getSize(id));
+        return 5242880;
       }
     },
     deleteFile: {
