@@ -87,6 +87,7 @@ function getMaxUploadChunkSize(fileSize) {
 const uploader = new FineUploaderS3({
   options:{
     debug: true,
+    maxConnections: 8,
     chunking: {
       enabled: true,
       concurrent: {
