@@ -5,7 +5,7 @@ import FineUploaderTraditional from 'fine-uploader-wrappers'
 import Gallery from 'react-fine-uploader'
 import 'react-fine-uploader/gallery/gallery.css'
 import FineUploader from 'fine-uploader'
-const fineUploader = new FineUploader
+
 const uploader = new FineUploaderS3({
   options:{
     debug: true,
@@ -15,7 +15,7 @@ const uploader = new FineUploaderS3({
         enabled: true
       },
       partSize: function(id){
-        console.log(fineUploader.getSize(id));
+        console.log(uploader.methods.getSize(id));
         return 5242880;
       }
     },
